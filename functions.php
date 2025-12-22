@@ -41,6 +41,18 @@ function lesson_setup(){
       register_nav_menus(array(
             'main-menu' => 'Main Menu',
       ));
+      register_post_type('latest_lesson', array(
+            'labels' => array(
+                  'name' => 'Latest Lesson',
+                  'singular_name' => 'Latest Lesson',
+                  'add_new' => 'Add Lesson',
+                  'add_new_item' => 'Add New Lesson Item',
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array('title' , 'editor' , 'thumbnail'),
+            'menu_icon' => get_template_directory_uri() . '/images/lesson.png',
+      ) );
 
   
 
