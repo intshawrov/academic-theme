@@ -58,3 +58,6 @@ function lesson_setup(){
 
       
 }
+
+
+add_action('after_setup_theme', 'lesson_setup');
