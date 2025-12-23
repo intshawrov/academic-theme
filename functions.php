@@ -54,6 +54,15 @@ function lesson_setup(){
             'menu_icon' => get_template_directory_uri() . '/images/lesson.png',
       ) );
 
+      register_sidebar( array(
+            'name'          => 'Lesson Sidebar',
+            'id'            => 'lesson-sidebar',
+            'before_widget' => '<div class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+      ) );
+
   
 
       
