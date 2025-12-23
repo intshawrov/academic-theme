@@ -55,13 +55,23 @@ function lesson_setup(){
       ) );
 
       register_sidebar( array(
-            'name'          => 'Lesson Sidebar',
-            'id'            => 'lesson-sidebar',
+            'name'          => 'Right Sidebar',
+            'id'            => 'right-sidebar',
             'before_widget' => '<div class="widget %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h3 class="widget-title">',
             'after_title'   => '</h3>',
       ) );
+
+      register_sidebar( array(
+            'name'          => 'Footer Sidebar',
+            'id'            => 'footer-sidebar',
+            'before_widget' => '<div class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+      ) );
+
 
   
 
