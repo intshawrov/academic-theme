@@ -2,6 +2,8 @@
 
 
 
+
+
 function lesson_setup(){
       // Enable Frature Image
       add_theme_support( 'post-thumbnails' );
@@ -53,30 +55,4 @@ function lesson_setup(){
             'supports' => array('title' , 'editor' , 'thumbnail'),
             'menu_icon' => get_template_directory_uri() . '/images/lesson.png',
       ) );
-
-      register_sidebar( array(
-            'name'          => 'Right Sidebar',
-            'id'            => 'right-sidebar',
-            'before_widget' => '<div class="widget %2$s">',
-            'after_widget'  => '</div>',
-            'before_title'  => '<h3 class="widget-title">',
-            'after_title'   => '</h3>',
-      ) );
-
-      register_sidebar( array(
-            'name'          => 'Footer Sidebar',
-            'id'            => 'footer-sidebar',
-            'before_widget' => '<div class="widget %2$s">',
-            'after_widget'  => '</div>',
-            'before_title'  => '<h3 class="widget-title">',
-            'after_title'   => '</h3>',
-      ) );
-
-
-  
-
-      
-}
-
-
-add_action('after_setup_theme', 'lesson_setup');
+      }
