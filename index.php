@@ -15,34 +15,34 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
 
     <!--====== Slick css ======-->
-    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slick.css">
 
     <!--====== Animate css ======-->
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.css">
     
     <!--====== Nice Select css ======-->
-    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/nice-select.css">
     
     <!--====== Nice Number css ======-->
-    <link rel="stylesheet" href="css/jquery.nice-number.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.nice-number.min.css">
 
     <!--====== Magnific Popup css ======-->
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/magnific-popup.css">
 
     <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css">
     
     <!--====== Fontawesome css ======-->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css">
     
     <!--====== Default css ======-->
-    <link rel="stylesheet" href="css/default.css">
-    
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/default.css">
+
     <!--====== Style css ======-->
-    <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+
     <!--====== Responsive css ======-->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css">
   
   
 </head>
