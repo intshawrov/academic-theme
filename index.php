@@ -196,7 +196,7 @@
                     <!----- course-1 ----->
                     <div class="course course-1 active-btn">
                         <div class="img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/course-1.png" alt="course-1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/course-1.png" alt="course-1">
                         </div>
 
                         <div class="course-details">
@@ -228,7 +228,7 @@
                     <!----- course-2 ----->
                     <div class="course course-2">
                         <div class="img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/course-2.png" alt="course-1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/course-2.png" alt="course-1">
                         </div>
 
                         <div class="course-details">
@@ -260,7 +260,7 @@
                     <!----- course-3 ----->
                     <div class="course course-3">
                         <div class="img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/course-3.png" alt="course-1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/course-3.png" alt="course-1">
                         </div>
 
                         <div class="course-details">
@@ -292,7 +292,7 @@
                     <!----- course-1 ----->
                     <div class="course course-1 active-btn">
                         <div class="img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/course-1.png" alt="course-1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/course-1.png" alt="course-1">
                         </div>
 
                         <div class="course-details">
@@ -324,7 +324,7 @@
                     <!----- course-2 ----->
                     <div class="course course-2">
                         <div class="img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/course-2.png" alt="course-1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/course-2.png" alt="course-1">
                         </div>
 
                         <div class="course-details">
@@ -356,7 +356,7 @@
                     <!----- course-3 ----->
                     <div class="course course-3">
                         <div class="img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/course-3.png" alt="course-1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/course-3.png" alt="course-1">
                         </div>
 
                         <div class="course-details">
@@ -397,7 +397,7 @@
                     <div class="testimonial-wrapper">
                         <!----- student box ----->
                         <div class="student-details">
-                            <img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/student-1.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/student-1.png" alt="">
 
                             <div class="name">
                                 <h3>Peter Moor</h3>
@@ -421,7 +421,7 @@
                     <div class="testimonial-wrapper">
                         <!----- student box ----->
                         <div class="student-details">
-                            <img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/student-1.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/student-1.png" alt="">
 
                             <div class="name">
                                 <h3>Peter Moor</h3>
@@ -445,7 +445,7 @@
                     <div class="testimonial-wrapper">
                         <!----- student box ----->
                         <div class="student-details">
-                            <img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/student-1.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/student-1.png" alt="">
 
                             <div class="name">
                                 <h3>Peter Moor</h3>
@@ -475,8 +475,8 @@
                 <div class="features-wrapper">
                     <!----- img box ----->
                     <div class="features-img">
-                        <img class="img-1" src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/features-img-1.png" alt="">
-                        <img class="img-2" src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/features-img-2.png" alt="">
+                        <img class="img-1" src="<?php echo get_template_directory_uri(); ?>/assets/images/features-img-1.png" alt="">
+                        <img class="img-2" src="<?php echo get_template_directory_uri(); ?>/assets/images/features-img-2.png" alt="">
                     </div>
 
                     <!----- text box ----->
@@ -507,7 +507,7 @@
 
                     <!----- img box ----->
                     <div class="cta-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/cta-img.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cta-img.png" alt="">
                     </div>
                 </div>
             </div>
@@ -528,7 +528,7 @@
                     <!----- blog-1 ----->
                     <div class="sngle-blog blog-1">
                         <div class="img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/blog-1.png" alt="course-1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-1.png" alt="course-1">
                         </div>
 
                         <div class="single-blog-details">
@@ -552,7 +552,7 @@
                     <!----- blog-2 ----->
                     <div class="sngle-blog blog-2">
                         <div class="img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/blog-2.png" alt="course-1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-2.png" alt="course-1">
                         </div>
 
                         <div class="single-blog-details">
@@ -576,7 +576,7 @@
                     <!----- blog-3 ----->
                     <div class="sngle-blog blog-3">
                         <div class="img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/blog-3.png" alt="course-1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-3.png" alt="course-1">
                         </div>
 
                         <div class="single-blog-details">
@@ -600,7 +600,7 @@
                     <!----- blog-1 ----->
                     <div class="sngle-blog blog-4">
                         <div class="img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/blog-1.png" alt="course-1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-1.png" alt="course-1">
                         </div>
 
                         <div class="single-blog-details">
@@ -624,7 +624,7 @@
                     <!----- blog-2 ----->
                     <div class="sngle-blog blog-4">
                         <div class="img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/blog-2.png" alt="course-1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-2.png" alt="course-1">
                         </div>
 
                         <div class="single-blog-details">
@@ -648,7 +648,7 @@
                     <!----- blog-3 ----->
                     <div class="sngle-blog blog-6">
                         <div class="img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/blog-3.png" alt="course-1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-3.png" alt="course-1">
                         </div>
 
                         <div class="single-blog-details">
@@ -679,7 +679,7 @@
                 <!----- about company ----->
                 <div class="about-company">
                     <div class="f-logo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-footer.png" alt="">
+                        <img src="assets/images/logo-footer.png" alt="">
                     </div>
 
                     <p>Need to help for your dream Career? trust us. With Lesson, study becomes a lot easier with us.</p>
