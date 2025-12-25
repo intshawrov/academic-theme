@@ -3,47 +3,19 @@
 <head>
    
     <!--====== Required meta tags ======-->
-    <meta charset="utf-8">
+    <?php bloginfo('charset'); ?>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!--====== Title ======-->
-    <title>Edubin - LMS Education HTML Template</title>
+    <?php bloginfo('name'); ?>
     
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png" type="image/png">
 
     <!--====== Slick css ======-->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slick.css">
-
-    <!--====== Animate css ======-->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.css">
     
-    <!--====== Nice Select css ======-->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/nice-select.css">
-    
-    <!--====== Nice Number css ======-->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.nice-number.min.css">
-
-    <!--====== Magnific Popup css ======-->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/magnific-popup.css">
-
-    <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css">
-    
-    <!--====== Fontawesome css ======-->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css">
-    
-    <!--====== Default css ======-->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/default.css">
-    
-    <!--====== Style css ======-->
-    <link rel="stylesheet" href="<?php echo '/css/style.css'; ?>">
-
-    
-    <!--====== Responsive css ======-->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css">
 
 
   
