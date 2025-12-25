@@ -110,7 +110,7 @@
                 <div class="hero-wrapper">
                     <!----- img box ----->
                     <div class="hero-img-box">
-                        <img src="<?php echo get_template_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/images/hero-img.png" alt="hero-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-img.png" alt="hero-img">
 
                         <!----- absolute card box ----->
                         <div class="card-box">
