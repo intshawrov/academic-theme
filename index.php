@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson</title>
     <!----- link css file ----->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
 
     <!----- responsive css file link ----->
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/responsive.css">
 
     <!----- jQuery google cdn ----->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -778,6 +778,6 @@
     </footer>
 
     <!----- JS file link ----->
-    <script src="assets/js/script.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/script.js"></script>
 </body>
 </html>
