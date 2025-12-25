@@ -12,7 +12,7 @@
     <title>Edubin - LMS Education HTML Template</title>
     
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png" type="image/png">
 
     <!--====== Slick css ======-->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slick.css">
@@ -39,12 +39,15 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/default.css">
     
     <!--====== Style css ======-->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+    <link rel="stylesheet" href="<?php echo '/css/style.css'; ?>">
+
     
     <!--====== Responsive css ======-->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css">
+
+
   
-  
+  <?php wp_head(); ?>
 </head>
 
 <body>
@@ -1265,6 +1268,8 @@
     <!--====== Map js ======-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ"></script>
     <script src="js/map-script.js"></script>
+
+    <?php wp_footer(); ?>   
 
 </body>
 </html>
