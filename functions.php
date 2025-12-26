@@ -39,7 +39,8 @@ function lesson_theme_setup(){
       register_nav_menus(array(
             'menu-1'    => __( 'Primary', 'lesson' ),
 
-            'footer-menu1'    => __( 'Footer Menu', 'lesson' ),
+            'footer-menu1'    => __( 'Footer Menu 1', 'lesson' ),
+            'footer-menu2'    => __( 'Footer Menu 2', 'lesson' ),
       ));
 
        add_theme_support(
