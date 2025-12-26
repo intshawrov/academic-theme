@@ -36,20 +36,30 @@ function lesson_theme_setup(){
       add_theme_support('post-thumbnails');
 
       // Menu Register
-      register_nav_menu(array(
-            'menu-1'    => esc_html__( 'Primary', 'mentor' ),
-      ));
-      
-       add_theme_support(
-        'html5',
-        array(
-          'search-form',
-          'comment-form',
-          'comment-list',
-          'gallery',
-          'caption',
-        )
-      );
+      // register_nav_menu(array(
+      //       'menu-1'    => esc_html__( 'Primary', 'mentor' ),
+      // ));
+
+      //  add_theme_support(
+      //   'html5',
+      //   array(
+      //     'search-form',
+      //     'comment-form',
+      //     'comment-list',
+      //     'gallery',
+      //     'caption',
+      //   )
+      // );
+      // Logo Support
+      add_theme_support(
+            'custom-logo',
+            array(
+                  'height' => 250,
+                  'width' => 250,
+                  'flex-width' => true,
+                  'flex-height' => true,
+            )
+            );
 
 }
 add_action('after_setup_theme', 'lesson_theme_setup');
