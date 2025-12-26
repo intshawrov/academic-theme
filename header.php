@@ -41,10 +41,14 @@
                 <div class="menu-button-wrapper">
                     <nav class="main-menu">
                         <ul>
-                            <li><a class="active" href="#">Home</a></li>
+
+                        <?php wp_nav_menu( array(
+                  'theme_location' => 'menu-1',) );
+                  ?>
+                            <!-- <li><a class="active" href="#">Home</a></li>
                             <li><a href="#">Courses</a></li>
                             <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">Reviews</a></li> -->
                         </ul>
 
                     </nav>
