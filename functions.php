@@ -68,3 +68,19 @@ function lesson_theme_setup(){
 
 }
 add_action('after_setup_theme', 'lesson_theme_setup');
+
+function lesson_widgets_init() {
+      register_sidebar(
+            array(
+                  'name'          => esc_html__( 'Footer One', 'lesson' ),
+                  'id'            => 'footer-1',
+                  'description'   => esc_html__( 'Add footer one widgets here.', 'lesson' ),
+                  'before_widget' => '<div id="%1$s" class="footer-widget %2$s">',
+                  'after_widget'  => '</div>',
+                  'before_title'  => '<h4 class="widget-title">',
+                  'after_title'   => '</h4>',
+            )
+            );
+      }
+
+      add_action( 'widgets_init', 'lesson_widgets_init' );
