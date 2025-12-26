@@ -58,12 +58,9 @@
                     <div>Support</div>
                     <hr>
 
-                    <ul>
-                        <li><a href="#">FAQ’s</a></li>
-                        <li><a href="">Terms & Conditions</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Contact Us</a></li>
-                    </ul>
+                   <?php wp_nav_menu( array(
+                  'theme_location' => 'footer-menu2',) );
+                  ?>    
                 </div>
 
                 <div class="footer-nav address">
