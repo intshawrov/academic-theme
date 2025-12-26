@@ -19,3 +19,37 @@ function lessonlms_theme_scripts(){
 }
 
 add_action('wp_enqueue_scripts','lessonlms_theme_scripts');
+
+
+function lesson_theme_setup(){
+
+      // Adding Support for Automatic Title-tag
+      add_theme_support('title-tag');
+
+      // Load Theme Text Domain
+      load_theme_textdomain( 'mentor', get_template_directory() . '/languages' );
+
+      //Generate automatic feed links on head
+      add_theme_support('automatic-feed-links');
+
+      //Enable Support for Post Thumbnails
+      add_theme_support('post-thumbnails');
+
+      // Menu Register
+      register_nav_menu(array(
+            'menu-1'    => esc_html__( 'Primary', 'mentor' ),
+      ));
+      
+       add_theme_support(
+        'html5',
+        array(
+          'search-form',
+          'comment-form',
+          'comment-list',
+          'gallery',
+          'caption',
+        )
+      );
+
+}
+add_action('after_setup_theme', 'lesson_theme_setup');
