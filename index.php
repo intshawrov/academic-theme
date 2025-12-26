@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson</title>
-    <!----- link css file ----->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+    <title><?php bloginfo('name'); ?>-- <?php bloginfo('description'); ?></title>
 
-    <!----- responsive css file link ----->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/responsive.css">
 
     <!----- jQuery google cdn ----->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -23,8 +19,9 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
 
+    <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
     <header>
         <div class="container">
             <div class="header-wrapper">
@@ -777,7 +774,7 @@
         </div>
     </footer>
 
-    <!----- JS file link ----->
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/script.js"></script>
+
+    <?php wp_footer(); ?>
 </body>
 </html>
