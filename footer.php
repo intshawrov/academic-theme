@@ -49,12 +49,9 @@
                     <div>Company</div>
                     <hr>
 
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="">Features</a></li>
-                        <li><a href="">Our Pricing</a></li>
-                        <li><a href="">Latest News</a></li>
-                    </ul>
+                  <?php wp_nav_menu( array(
+                  'theme_location' => 'footer-menu1',) );
+                  ?>
                 </div>
 
                 <div class="footer-nav support">
