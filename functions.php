@@ -37,7 +37,9 @@ function lesson_theme_setup(){
 
       // Menu Register
       register_nav_menus(array(
-            'menu-1'    => esc_html__( 'Primary', 'mentor' ),
+            'menu-1'    => __( 'Primary', 'lesson' ),
+
+            'footer-menu1'    => __( 'Footer Menu', 'lesson' ),
       ));
 
        add_theme_support(
@@ -60,6 +62,8 @@ function lesson_theme_setup(){
                   'flex-height' => true,
             )
             );
+
+      
 
 }
 add_action('after_setup_theme', 'lesson_theme_setup');
