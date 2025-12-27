@@ -1,60 +1,49 @@
 <?php
 
+// Enqueue/Link scripts and style
+function lessonlms_theme_scripts()
+{
+    // Google Fonts
+    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&family=Poppins:wght@400;700&family=Sen:wght@400..800&display=swap', null);
 
-      // Enqueue Script & Styles
+    // Theme Style CSS
+    wp_enqueue_style('styles-css', get_template_directory_uri() . '/assets/css/style.css');
 
-function lessonlms_theme_scripts(){
+    // Responsive CSS
+    wp_enqueue_style('responsive-css', get_template_directory_uri() . '/assets/css/responsive.css');
 
-      // Add CSS
-      wp_enqueue_style( 'style-css', get_template_directory_uri().'/assets/css/style.css', array(), '1.0.0', 'all' );
-      wp_enqueue_style( 'responsive-css', get_template_directory_uri().'/assets/css/responsive.css', array(), '1.0.0', 'all' );
-      
-      wp_enqueue_style( 'lesson-theme-style', get_stylesheet_uri() );
+    // Slick Slider CSS
+    wp_enqueue_style('slick-css', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css', array(), '1.9.0');
 
-      // Add JS
-      wp_enqueue_script('script', get_template_directory_uri().'/assets/js/script.js', array(), '1.0.0', true );
-      
+    // Boxicons
+    wp_enqueue_style('boxicon-css', 'https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css', array(), '2.1.4');
 
+    // Default Theme Stylesheet (style.css)
+    wp_enqueue_style('lesson-theme-style', get_stylesheet_uri());
+
+    // jQuery (included in WordPress)
+    wp_enqueue_script('jquery');
+
+    // Slick JS
+    wp_enqueue_script('slick-js', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js', array('jquery'), '1.9.0', true);
+
+    // Main Theme JS
+    wp_enqueue_script('main-js', get_template_directory_uri() . "/assets/js/script.js", array('jquery'), '1.0', true);
 }
+add_action('wp_enqueue_scripts', 'lessonlms_theme_scripts');
 
-add_action('wp_enqueue_scripts','lessonlms_theme_scripts');
-
-
-function lesson_theme_setup(){
-
-      // Adding Support for Automatic Title-tag
-      add_theme_support('title-tag');
-
-      // Load Theme Text Domain
-      load_theme_textdomain( 'lesson', get_template_directory() . '/languages' );
-
-      //Generate automatic feed links on head
-      add_theme_support('automatic-feed-links');
-
-      //Enable Support for Post Thumbnails
-      add_theme_support('post-thumbnails');
-
-      // Menu Register
-      register_nav_menus(array(
-            'menu-1'    => __( 'Primary', 'lesson' ),
-
-            'footer-menu1'    => __( 'Footer Menu 1', 'lesson' ),
-            'footer-menu2'    => __( 'Footer Menu 2', 'lesson' ),
-      ));
-
-       add_theme_support(
-        'html5',
-        array(
-          'search-form',
-          'comment-form',
-          'comment-list',
-          'gallery',
-          'caption',
-        )
-      );
-    
-      
-
+function lessonlms_theme_registration()
+{
+    add_theme_support('custom-logo', array(
+        'height' => 30,
+        'weight' => 80
+    ));
+    register_nav_menus(array(
+        'primary_menu' => __('Primary Menu', 'lessonlms'),
+        'mobile_menu' => __('Mobile Menu', 'lessonlms'),
+        'footer_menu_1' => __('Footer Menu 1', 'lessonlms'),
+        'footer_menu_2' => __('Footer Menu 2', 'lessonlms'),
+    ));
 }
-add_action('after_setup_theme', 'lesson_theme_setup');
+add_action('after_setup_theme', 'lessonlms_theme_registration');
 
