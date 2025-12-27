@@ -78,7 +78,7 @@ function lessonlms_customaiz_register($wp_customize){
         'type' => 'text',
     ) );
 
-            // About Menu 2
+        // About Menu 2
     $wp_customize->add_setting('footer_menu2', array(
         'default' => '',
     ));
@@ -89,7 +89,7 @@ function lessonlms_customaiz_register($wp_customize){
         'type' => 'text',
     ) );
 
-            // About Menu 3
+        // About Menu 3
     $wp_customize->add_setting('footer_menu3', array(
         'default' => '',
     ));
@@ -99,6 +99,29 @@ function lessonlms_customaiz_register($wp_customize){
         'settings' => 'footer_menu3',
         'type' => 'text',
     ) );
+
+        // About Menu 3
+    $wp_customize->add_setting('footer_location', array(
+        'default' => '',
+    ));
+    $wp_customize->add_control('footer_location_control', array(
+        'label' => __('Footer Location ', 'lessonlms'),
+        'section' => 'footer_settings',
+        'settings' => 'footer_location',
+        'type' => 'text',
+    ) );
+
+        // About Menu 3
+    $wp_customize->add_setting('footer_location_description', array(
+        'default' => '',
+    ));
+    $wp_customize->add_control('footer_location_description_control', array(
+        'label' => __('Footer Location Description', 'lessonlms'),
+        'section' => 'footer_settings',
+        'settings' => 'footer_location_description',
+        'type' => 'text',
+    ) );
+
 
 
 }

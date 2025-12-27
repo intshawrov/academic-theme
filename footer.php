@@ -78,7 +78,9 @@
                     <!----- location ----->
                     <div class="address-details location">
                         <a href="https://maps.app.goo.gl/5QJbeQc3kLpr9bX49">
-                            <span><strong>Location:</strong> 27 Division St, New York, NY 10002, USA</span>
+                            <span>
+                                <strong><?php echo esc_html(get_theme_mod('footer_location', '')); ?></strong> <?php echo esc_html(get_theme_mod('footer_location_description', '')); ?>
+                            </span>
                         </a>
                     </div>
 
