@@ -60,7 +60,7 @@ function lessonlms_customaiz_register($wp_customize){
         'default' => '',
     ));
 
-    $wp_customize-add_control('footer_about_text_control', array(
+    $wp_customize->add_control('footer_about_text_control', array(
         'label' => __('Footer About Text', 'lessonlms'),
         'section' => 'footer_settings',
         'settings' => 'footer_about_text',

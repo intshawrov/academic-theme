@@ -4,10 +4,10 @@
                 <!----- about company ----->
                 <div class="about-company">
                     <div class="f-logo">
-                        <img src="assets/images/logo-footer.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-footer.png" alt="">
                     </div>
 
-                    <p>Need to help for your dream Career? trust us. With Lesson, study becomes a lot easier with us.</p>
+                    <p><?php echo get_theme_mod('footer_about_text', ''); ?></p>
 
                     <div class="social-links">
                         <!----- twitter ----->
