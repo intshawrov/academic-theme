@@ -47,3 +47,28 @@ function lessonlms_theme_registration()
 }
 add_action('after_setup_theme', 'lessonlms_theme_registration');
 
+
+function lessonlms_customaiz_register($wp_customize){
+
+    $wp_customize->add_section('footer_settings', array(
+        'title' => __('Footer Settings', 'lessonlms'),
+        'priority' => 120,
+    ));
+
+    // About Text Setting
+    $wp_customize->add_setting('footer_about_text', array(
+        'default' => '',
+    ));
+
+    $wp_customize-add_control('footer_about_text_control', array(
+        'label' => __('Footer About Text', 'lessonlms'),
+        'section' => 'footer_settings',
+        'settings' => 'footer_about_text',
+        'type' => 'textarea',
+    ) );
+
+
+}
+
+add_action('customize_register', 'lessonlms_customaiz_register');
+
