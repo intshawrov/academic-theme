@@ -77,24 +77,26 @@
 
                     <!----- location ----->
                     <div class="address-details location">
-                        <a href="https://maps.app.goo.gl/5QJbeQc3kLpr9bX49">
+                        <strong><?php echo esc_html(get_theme_mod('footer_location', '')); ?></strong>
+                        <a href="https://www.google.com/maps/place/Shyampur+Govt.Model+School+and+College/@23.6830266,90.4387519,368m/data=!3m2!1e3!5s0x3755b9ef7b2f0249:0xb2bc389dd765e616!4m6!3m5!1s0x3755b9ef653fa28f:0x16c12132fffd9853!8m2!3d23.6830376!4d90.4403766!16s%2Fg%2F1tq6bw3z?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D">
                             <span>
-                                <strong><?php echo esc_html(get_theme_mod('footer_location', '')); ?></strong> <?php echo esc_html(get_theme_mod('footer_location_description', '')); ?>
+                                 <?php echo esc_html(get_theme_mod('footer_location_description', '')); ?>
                             </span>
                         </a>
                     </div>
 
                     <!----- email ----->
                     <div class="address-details email">
+                        <strong><?php echo esc_html(get_theme_mod('footer_email', '')); ?></strong>
                         <a href="mailto:email@gmail.com">
-                            <span><strong><?php echo esc_html(get_theme_mod('footer_email', '')); ?></strong> <?php echo esc_html(get_theme_mod('footer_email_description', '')); ?></span>
+                            <span> <?php echo esc_html(get_theme_mod('footer_email_description', '')); ?></span>
                         </a>
                     </div>
 
                     <!----- contact number ----->
                     <div class="address-details phone">
                         <a href="tel:+0001234567890">
-                            <span><strong>Phone:</strong> + 000 1234 567 890</span>
+                            <span><strong>Phone:</strong><?php echo esc_html(get_theme_mod('phone_number', '')); ?> </span>
                         </a>
                     </div>
                 </div>
