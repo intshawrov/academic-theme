@@ -7,7 +7,9 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-footer.png" alt="">
                     </div>
 
+                    <?php if( get_theme_mod('footer_about_text', '') ): ?>
                     <p><?php echo get_theme_mod('footer_about_text', ''); ?></p>
+                    <?php endif; ?>
 
                     <div class="social-links">
                         <!----- twitter ----->
@@ -46,7 +48,7 @@
 
                 <!----- company links ----->
                 <div class="footer-nav company">
-                    <div>Company</div>
+                    <div><?php echo get_theme_mod('footer_menu1', ''); ?></div>
                     <hr>
 
                   <?php wp_nav_menu( array(
@@ -55,7 +57,7 @@
                 </div>
 
                 <div class="footer-nav support">
-                    <div>Support</div>
+                    <div><?php echo get_theme_mod('footer_menu2', ''); ?></div>
                     <hr>
 
                    <?php wp_nav_menu( array(
@@ -64,7 +66,7 @@
                 </div>
 
                 <div class="footer-nav address">
-                    <div>Address</div>
+                    <div><?php echo get_theme_mod('footer_menu3', ''); ?></div>
                     <hr>
 
                     <!----- location ----->

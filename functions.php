@@ -59,12 +59,45 @@ function lessonlms_customaiz_register($wp_customize){
     $wp_customize->add_setting('footer_about_text', array(
         'default' => '',
     ));
-
     $wp_customize->add_control('footer_about_text_control', array(
         'label' => __('Footer About Text', 'lessonlms'),
         'section' => 'footer_settings',
         'settings' => 'footer_about_text',
         'type' => 'textarea',
+    ) );
+
+
+        // About Menu 1
+    $wp_customize->add_setting('footer_menu1', array(
+        'default' => '',
+    ));
+    $wp_customize->add_control('footer_menu1_control', array(
+        'label' => __('Footer Menu 1', 'lessonlms'),
+        'section' => 'footer_settings',
+        'settings' => 'footer_menu1',
+        'type' => 'text',
+    ) );
+
+            // About Menu 2
+    $wp_customize->add_setting('footer_menu2', array(
+        'default' => '',
+    ));
+    $wp_customize->add_control('footer_menu2_control', array(
+        'label' => __('Footer Menu 2', 'lessonlms'),
+        'section' => 'footer_settings',
+        'settings' => 'footer_menu2',
+        'type' => 'text',
+    ) );
+
+            // About Menu 3
+    $wp_customize->add_setting('footer_menu3', array(
+        'default' => '',
+    ));
+    $wp_customize->add_control('footer_menu3_control', array(
+        'label' => __('Footer Menu 3', 'lessonlms'),
+        'section' => 'footer_settings',
+        'settings' => 'footer_menu3',
+        'type' => 'text',
     ) );
 
 
