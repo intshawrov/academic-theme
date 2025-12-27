@@ -48,7 +48,7 @@
 
                 <!----- company links ----->
                 <div class="footer-nav company">
-                    <?php if( get_theme_mod('footer_menu_title', '') ): ?>
+                    <?php if( get_theme_mod('footer_menu1', '') ): ?>
                     <div><?php echo esc_html(get_theme_mod('footer_menu1', '')) ;?></div>
                     <?php endif; ?>
                     <hr>
@@ -87,7 +87,7 @@
                     <!----- email ----->
                     <div class="address-details email">
                         <a href="mailto:email@gmail.com">
-                            <span><strong>Email:</strong> email@gmail.com</span>
+                            <span><strong><?php echo esc_html(get_theme_mod('footer_email', '')); ?></strong> <?php echo esc_html(get_theme_mod('footer_email_description', '')); ?></span>
                         </a>
                     </div>
 
