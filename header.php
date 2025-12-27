@@ -3,8 +3,6 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php bloginfo('name'); ?>-- <?php bloginfo('description'); ?></title>
-
 
     <!----- jQuery google cdn ----->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -22,19 +20,16 @@
         <div class="container">
             <div class="header-wrapper">
                 <!----- logo ----->
+                <?php if (has_custom_logo()) : ?>
+                    <?php the_custom_logo(); ?>
+                <?php else : ?>
+                    <a href="<?php echo esc_url(home_url('/')); ?>">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="<?php esc_attr(get_bloginfo('name')) ?>">
+                    </a>
+                <?php endif; ?>
+                <div class="logo">
 
-                <?php if ( has_custom_logo() ) : ?>
-                  <?php the_custom_logo(); ?>
-                  <?php else : ?>
-                  <div class="logo">
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                              <img 
-                              src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo.png' ); ?>" 
-                              alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"
-                              >
-                        </a>
-                  </div>
-                  <?php endif; ?>
+                </div>
 
 
                 <!----- main-menu and button ----->
