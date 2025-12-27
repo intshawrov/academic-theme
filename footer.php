@@ -48,7 +48,9 @@
 
                 <!----- company links ----->
                 <div class="footer-nav company">
-                    <div><?php echo get_theme_mod('footer_menu1', ''); ?></div>
+                    <?php if( get_theme_mod('footer_menu_title', '') ): ?>
+                    <div><?php echo esc_html(get_theme_mod('footer_menu1', '')) ;?></div>
+                    <?php endif; ?>
                     <hr>
 
                   <?php wp_nav_menu( array(
@@ -57,7 +59,9 @@
                 </div>
 
                 <div class="footer-nav support">
-                    <div><?php echo get_theme_mod('footer_menu2', ''); ?></div>
+                    <?php if( get_theme_mod('footer_menu2', '') ): ?>
+                    <div><?php echo esc_html(get_theme_mod('footer_menu2', '')) ;?></div>
+                    <?php endif; ?>
                     <hr>
 
                    <?php wp_nav_menu( array(
@@ -66,7 +70,9 @@
                 </div>
 
                 <div class="footer-nav address">
-                    <div><?php echo get_theme_mod('footer_menu3', ''); ?></div>
+                    <?php if( get_theme_mod('footer_menu3', '') ): ?>
+                    <div><?php echo esc_html(get_theme_mod('footer_menu3', '')) ;?></div>
+                    <?php endif; ?>
                     <hr>
 
                     <!----- location ----->
