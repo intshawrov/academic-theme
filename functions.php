@@ -100,7 +100,6 @@ function lessonlms_customaiz_register($wp_customize){
         'type' => 'text',
     ) );
 
-
         // Footer Location Description
     $wp_customize->add_setting('footer_location_description', array(
         'default' => '',
@@ -145,8 +144,6 @@ function lessonlms_customaiz_register($wp_customize){
         'section' => 'footer_settings',
         'settings' => 'footer_image',
     )));
-
-    
 
 }
 

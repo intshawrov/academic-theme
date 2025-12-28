@@ -83,7 +83,7 @@
 
                     <!----- location ----->
                     <div class="address-details location">
-                        <strong><?php echo esc_html(get_theme_mod('footer_location', '')); ?></strong>
+                        <strong>Location:</strong>
                         <a href="https://www.google.com/maps/place/Shyampur+Govt.Model+School+and+College/@23.6830266,90.4387519,368m/data=!3m2!1e3!5s0x3755b9ef7b2f0249:0xb2bc389dd765e616!4m6!3m5!1s0x3755b9ef653fa28f:0x16c12132fffd9853!8m2!3d23.6830376!4d90.4403766!16s%2Fg%2F1tq6bw3z?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D">
                             <span>
                                  <?php echo esc_html(get_theme_mod('footer_location_description', '')); ?>
