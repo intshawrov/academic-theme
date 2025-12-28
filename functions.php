@@ -166,6 +166,17 @@ function lessonlms_customaiz_register($wp_customize){
         'settings' => 'footer_image',
     )));
 
+     // Phone Number
+    $wp_customize->add_setting('phone_number', array(
+        'default' => '',
+    ));
+    $wp_customize->add_control('phone_number_control', array(
+        'label' => __('Phone Number ', 'lessonlms'),
+        'section' => 'footer_settings',
+        'settings' => 'phone_number',
+        'type' => 'text',
+    ) );    
+
 }
 
 add_action('customize_register', 'lessonlms_customaiz_register');
