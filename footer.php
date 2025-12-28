@@ -93,7 +93,7 @@
 
                     <!----- email ----->
                     <div class="address-details email">
-                        <strong><?php echo esc_html(get_theme_mod('footer_email', '')); ?></strong>
+                        <strong>Email:</strong>
                         <a href="mailto:email@gmail.com">
                             <span> <?php echo esc_html(get_theme_mod('footer_email_description', '')); ?></span>
                         </a>
