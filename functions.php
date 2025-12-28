@@ -155,7 +155,16 @@ function lessonlms_customaiz_register($wp_customize){
         'type' => 'text',
     ) );
 
+    // Footer Image
 
+    $wp_customize->add_setting('footer_image', array(
+        'default' => '',
+    )); 
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'footer_image_control', array(
+        'label' => __('Footer Image', 'lessonlms'),
+        'section' => 'footer_settings',
+        'settings' => 'footer_image',
+    )));
 
 }
 

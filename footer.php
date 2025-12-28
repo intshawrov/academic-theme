@@ -4,7 +4,13 @@
                 <!----- about company ----->
                 <div class="about-company">
                     <div class="f-logo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-footer.png" alt="">
+                        <?php
+                            $footer_image = get_theme_mod('footer_image');
+
+                            if ( $footer_image ) :
+                            ?>
+                        <img src="<?php echo esc_url($footer_image); ?>" alt="">
+                        <?php endif; ?>
                     </div>
 
                     <?php if( get_theme_mod('footer_about_text', '') ): ?>
