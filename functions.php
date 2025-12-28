@@ -174,6 +174,17 @@ function lessonlms_theme_widgets(){
         'before_title'  => '<h2 class="widget-title">',
         'after_title'   => '</h2>',
     ) );
+
+    register_post_type('lesson', array(
+        'labels' => array(
+            'name' => __('Lessons'),
+            'singular_name' => __('Lesson')
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'supports' => array('title', 'editor', 'thumbnail'),
+        'rewrite' => array('slug' => 'lessons'),
+    ) );
 }
 
 add_action('widgets_init', 'lessonlms_theme_widgets');
