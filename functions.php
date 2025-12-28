@@ -55,7 +55,7 @@ function lessonlms_customaiz_register($wp_customize){
         'priority' => 120,
     ));
 
-    $socials = ['facebook', 'twitter', 'instagram', 'linkedin', 'youtube'];
+    $socials = ['facebook',  'instagram', 'linkedin', ];
 
     foreach ($socials as $social) {
         $wp_customize->add_setting('footer_' . $social, array(
