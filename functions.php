@@ -55,6 +55,20 @@ function lessonlms_customaiz_register($wp_customize){
         'priority' => 120,
     ));
 
+    $socials = ['facebook', 'twitter', 'instagram', 'linkedin', 'youtube'];
+
+    foreach ($socials as $social) {
+        $wp_customize->add_setting('footer_' . $social, array(
+            'default' => '',
+        ));
+        $wp_customize->add_control('footer_' . $social . '_control', array(
+            'label' => __('Footer ' . $social, 'lessonlms'),
+            'section' => 'footer_settings',
+            'settings' => 'footer_' . $social,
+            'type' => 'text',
+        ) );
+    }
+
     // About Text Setting
     $wp_customize->add_setting('footer_about_text', array(
         'default' => '',
