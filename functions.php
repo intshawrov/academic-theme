@@ -181,10 +181,8 @@ function lessonlms_theme_widgets(){
             'singular_name' => __('Lesson')
         ),
         'public' => true,
-        'has_archive' => true,
-        'supports' => array('title', 'editor', 'thumbnail'),
-        'rewrite' => array('slug' => 'lessons'),
-    ) );
+        'has_archive' => true
+    ));
 }
 
 add_action('widgets_init', 'lessonlms_theme_widgets');
