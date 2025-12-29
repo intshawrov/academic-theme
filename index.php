@@ -442,9 +442,11 @@
 
                             <hr>
 
+                            <?php if(get_theme_mod('blog_section_title' , '')) : ?>
                             <div class="blog-title">
                                 <span><?php echo esc_html(get_theme_mod('blog_section_title' , '')); ?></span>
                             </div>
+                            <?php endif; ?>
 
                             <!----- btn ----->
                             <div class="yellow-bg-btn read-more">Read More</div>
