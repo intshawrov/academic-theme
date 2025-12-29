@@ -85,9 +85,29 @@ function lessonlms_customaiz_register($wp_customize){
         'default' => '',
     ));
     $wp_customize->add_control('blog_section_title_control', array(
-        'label' => __('Blog Section H Title', 'lessonlms'),
+        'label' => __('Blog Section A Title', 'lessonlms'),
         'section' => 'blog_settings',
         'settings' => 'blog_section_title',
+        'type' => 'text',
+    ) );
+
+    $wp_customize->add_setting('blog_section_title_b', array(
+        'default' => '',
+    ));
+    $wp_customize->add_control('blog_section_title_b_control', array(
+        'label' => __('Blog Section B Title', 'lessonlms'),
+        'section' => 'blog_settings',
+        'settings' => 'blog_section_title_b',
+        'type' => 'text',
+    ) );
+
+    $wp_customize->add_setting('blog_section_title_c', array(
+        'default' => '',
+    ));
+    $wp_customize->add_control('blog_section_title_c_control', array(
+        'label' => __('Blog Section C Title', 'lessonlms'),
+        'section' => 'blog_settings',
+        'settings' => 'blog_section_title_c',
         'type' => 'text',
     ) );
 
