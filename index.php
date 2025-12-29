@@ -456,7 +456,13 @@
                     <!----- blog-2 ----->
                     <div class="sngle-blog blog-2">
                         <div class="img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-2.png" alt="course-1">
+                            <?php
+                            $blog_section_image = get_theme_mod('blog_section_image');
+
+                            if ( $blog_section_image ) :
+                            ?>
+                            <img src="<?php echo esc_url($blog_section_image); ?>" alt="course-1">
+                            <?php endif; ?>
                         </div>
 
                         <div class="single-blog-details">
