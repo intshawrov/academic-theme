@@ -62,12 +62,23 @@ function lessonlms_customaiz_register($wp_customize){
         'default' => 'Our Blog',
     ));
     $wp_customize->add_control('blog_heading_control', array(
-        'label' => __('Blog Heading', 'lessonlms'),
+        'label' => __('Blog Section Title', 'lessonlms'),
         'section' => 'blog_settings',
         'settings' => 'blog_heading',
-        'type' => 'textarea',
+        'type' => 'text',
     ) );
 
+    // Blog Section Description
+
+     $wp_customize->add_setting('blog_section_description', array(
+        'default' => 'Build new skills with new trendy courses and shine for the next future career.',
+    ));
+    $wp_customize->add_control('blog_section_description_control', array(
+        'label' => __('Blog Section Description', 'lessonlms'),
+        'section' => 'blog_settings',
+        'settings' => 'blog_section_description',
+        'type' => 'textarea',
+    ) );
 
 
     // Footer Section Start Here
