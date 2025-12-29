@@ -93,13 +93,31 @@ function lessonlms_customaiz_register($wp_customize){
 
      // Blog Section Image
 
-    $wp_customize->add_setting('blog_section_image', array(
+    $wp_customize->add_setting('blog_right_image', array(
         'default' => '',
     )); 
-    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'blog_section_image_control', array(
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'blog_right_image_control', array(
         'label' => __('Blog Image', 'lessonlms'),
         'section' => 'blog_settings',
-        'settings' => 'blog_section_image',
+        'settings' => 'blog_right_image',
+    )));
+
+    $wp_customize->add_setting('blog_middle_image', array(
+        'default' => '',
+    )); 
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'blog_middle_image_control', array(
+        'label' => __('Blog Image', 'lessonlms'),
+        'section' => 'blog_settings',
+        'settings' => 'blog_middle_image',
+    )));
+
+    $wp_customize->add_setting('blog_left_image', array(
+        'default' => '',
+    )); 
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'blog_left_image_control', array(
+        'label' => __('Blog Image', 'lessonlms'),
+        'section' => 'blog_settings',
+        'settings' => 'blog_left_image',
     )));
 
 

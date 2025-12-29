@@ -429,15 +429,17 @@
                 <div class="blog-wrapper">
                     <!----- blog-1 ----->
                     <div class="sngle-blog blog-1">
-                        <?php
-                            $blog_section_image = get_theme_mod('blog_section_image');
-
-                            if ( $blog_section_image ) :
-                            ?>
+                        
                         <div class="img">
-                            <img src="<?php echo esc_url($blog_section_image); ?>" alt="course-1">
+                            <?php
+                            $blog_right_image = get_theme_mod('blog_right_image');
+
+                            if ( $blog_right_image ) :
+                            ?>
+                            <img src="<?php echo esc_url($blog_right_image); ?>" alt="course-1">
+                            <?php endif; ?>
                         </div>
-                        <?php endif; ?>
+                        
 
                         <div class="single-blog-details">
                             <!----- blog-details ----->
@@ -463,11 +465,11 @@
                     <div class="sngle-blog blog-2">
                         <div class="img">
                             <?php
-                            $blog_section_image = get_theme_mod('blog_section_image');
+                            $blog_middle_image = get_theme_mod('blog_middle_image');
 
-                            if ( $blog_section_image ) :
+                            if ( $blog_middle_image ) :
                             ?>
-                            <img src="<?php echo esc_url($blog_section_image); ?>" alt="course-1">
+                            <img src="<?php echo esc_url($blog_middle_image); ?>" alt="course-1">
                             <?php endif; ?>
                         </div>
 
