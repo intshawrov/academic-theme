@@ -443,7 +443,7 @@
                             <hr>
 
                             <div class="blog-title">
-                                <span>How to become a pro web designer in 2022 and get remot job?</span>
+                                <span><?php echo esc_html(get_theme_mod('blog_section_title' , '')); ?></span>
                             </div>
 
                             <!----- btn ----->

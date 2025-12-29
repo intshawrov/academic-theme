@@ -80,6 +80,16 @@ function lessonlms_customaiz_register($wp_customize){
         'type' => 'textarea',
     ) );
 
+    $wp_customize->add_setting('blog_section_title', array(
+        'default' => '',
+    ));
+    $wp_customize->add_control('blog_section_title_control', array(
+        'label' => __('Blog Section H Title', 'lessonlms'),
+        'section' => 'blog_settings',
+        'settings' => 'blog_section_title',
+        'type' => 'text',
+    ) );
+
 
     // Footer Section Start Here
     $wp_customize->add_section('footer_settings', array(
