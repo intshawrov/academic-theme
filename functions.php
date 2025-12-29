@@ -80,6 +80,7 @@ function lessonlms_customaiz_register($wp_customize){
         'type' => 'textarea',
     ) );
 
+    // Blog section H Title
     $wp_customize->add_setting('blog_section_title', array(
         'default' => '',
     ));
@@ -90,6 +91,19 @@ function lessonlms_customaiz_register($wp_customize){
         'type' => 'text',
     ) );
 
+     // Blog Section Image
+
+    $wp_customize->add_setting('blog_section_image', array(
+        'default' => '',
+    )); 
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'blog_section_image_control', array(
+        'label' => __('Blog Image', 'lessonlms'),
+        'section' => 'blog_settings',
+        'settings' => 'blog_section_image',
+    )));
+
+
+    
 
     // Footer Section Start Here
     $wp_customize->add_section('footer_settings', array(
