@@ -416,8 +416,13 @@
             <div class="container">
 
                 <div class="blog-heading">
-                    <h3>Our blog</h3>
-                    <p>Read our regular travel blog and know the latest update of tour and travel</p>
+                    <?php if (get_theme_mod('blog_heading' , '')) : ?>
+                    <h3><?php echo esc_html(get_theme_mod('blog_heading' , '')); ?></h3>
+                    <?php endif; ?>
+
+                    <?php if(get_theme_mod('blog_section_description' , '')) : ?>
+                    <p><?php echo esc_html(get_theme_mod('blog_section_description' , '')); ?></p>
+                    <?php endif; ?>
                 </div>
 
 
