@@ -51,15 +51,26 @@ add_action('after_setup_theme', 'lessonlms_theme_registration');
 
 function lessonlms_customaiz_register($wp_customize){
 
-     // Blog Settings
+     // Blog Section Start Here
     $wp_customize->add_section('blog_settings', array(
         'title' => __('Blog Settings', 'lessonlms'),
         'priority' => 110,
     ));
+    // Blog Heading Setting
+
+    $wp_customize->add_setting('blog_heading', array(
+        'default' => 'Our Blog',
+    ));
+    $wp_customize->add_control('blog_heading_control', array(
+        'label' => __('Blog Heading', 'lessonlms'),
+        'section' => 'blog_settings',
+        'settings' => 'blog_heading',
+        'type' => 'textarea',
+    ) );
 
 
 
-    // Footer Settings
+    // Footer Section Start Here
     $wp_customize->add_section('footer_settings', array(
         'title' => __('Footer Settings', 'lessonlms'),
         'priority' => 120,
