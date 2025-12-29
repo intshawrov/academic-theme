@@ -429,9 +429,15 @@
                 <div class="blog-wrapper">
                     <!----- blog-1 ----->
                     <div class="sngle-blog blog-1">
+                        <?php
+                            $blog_section_image = get_theme_mod('blog_section_image');
+
+                            if ( $blog_section_image ) :
+                            ?>
                         <div class="img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-1.png" alt="course-1">
+                            <img src="<?php echo esc_url($blog_section_image); ?>" alt="course-1">
                         </div>
+                        <?php endif; ?>
 
                         <div class="single-blog-details">
                             <!----- blog-details ----->
