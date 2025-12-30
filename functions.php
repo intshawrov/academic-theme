@@ -185,15 +185,27 @@ function lessonlms_customaiz_register($wp_customize){
 
     // Blog Section Date
 
-    $wp_customize->add_setting('blog_date', array(
+    $wp_customize->add_setting('blog_date_a', array(
         'default' => 'December 30, 2025',
     ));
-    $wp_customize->add_control('blog_date_control', array(
-        'label' => __('Blog Date', 'lessonlms'),
+    $wp_customize->add_control('blog_date_a_control', array(
+        'label' => __('Blog Date A  ', 'lessonlms'),
         'section' => 'blog_settings',
-        'settings' => 'blog_date',
+        'settings' => 'blog_date_a',
         'type' => 'text',
     ) );
+
+    $wp_customize->add_setting('blog_date_b', array(
+        'default' => 'December 30, 2025',
+    ));
+    $wp_customize->add_control('blog_date_b_control', array(
+        'label' => __('Blog Date B', 'lessonlms'),
+        'section' => 'blog_settings',
+        'settings' => 'blog_date_b',
+        'type' => 'text',
+    ) );
+
+
 
 
     
