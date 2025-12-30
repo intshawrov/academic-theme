@@ -151,13 +151,23 @@ function lessonlms_customaiz_register($wp_customize){
     )));
 
     // Blog Section Button Text
-    $wp_customize->add_setting('blog_button_text', array(
+    $wp_customize->add_setting('blog_button_text_a', array(
         'default' => 'Read More',
     ));
-    $wp_customize->add_control('blog_button_text_control', array(
-        'label' => __('Blog Section Button Text', 'lessonlms'),
+    $wp_customize->add_control('blog_button_text_a_control', array(
+        'label' => __('Blog Section Button Text A', 'lessonlms'),
         'section' => 'blog_settings',
-        'settings' => 'blog_button_text',
+        'settings' => 'blog_button_text_a',
+        'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('blog_button_text_b', array(
+        'default' => 'Read More',
+    ));
+    $wp_customize->add_control('blog_button_text_b_control', array(
+        'label' => __('Blog Section Button Text B', 'lessonlms'),
+        'section' => 'blog_settings',
+        'settings' => 'blog_button_text_b',
         'type' => 'text',
     ));
 
