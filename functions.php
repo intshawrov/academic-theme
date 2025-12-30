@@ -171,6 +171,16 @@ function lessonlms_customaiz_register($wp_customize){
         'type' => 'text',
     ));
 
+    $wp_customize->add_setting('blog_button_text_c', array(
+        'default' => 'Read More',
+    ));
+    $wp_customize->add_control('blog_button_text_c_control', array(
+        'label' => __('Blog Section Button Text C', 'lessonlms'),
+        'section' => 'blog_settings',
+        'settings' => 'blog_button_text_c',
+        'type' => 'text',
+    ));
+
 
     
 
