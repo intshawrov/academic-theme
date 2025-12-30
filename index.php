@@ -517,7 +517,7 @@
                             </div>
 
                             <!----- btn ----->
-                            <div class="yellow-bg-btn black-btn read-more">Read More</div>
+                            <div class="yellow-bg-btn black-btn read-more"><?php echo esc_html(get_theme_mod('blog_button_text_c', 'Read More')); ?></div>
                         </div>
                     </div>
 
