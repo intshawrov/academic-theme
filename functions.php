@@ -151,6 +151,8 @@ function lessonlms_customaiz_register($wp_customize){
     )));
 
     // Blog Section Button Text
+
+    
     $wp_customize->add_setting('blog_button_text_a', array(
         'default' => 'Read More',
     ));

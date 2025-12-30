@@ -457,7 +457,7 @@
                             <?php endif; ?>
 
                             <!----- btn ----->
-                            <div class="yellow-bg-btn read-more">Read More</div>
+                            <div class="yellow-bg-btn read-more"><?php echo esc_html(get_theme_mod('blog_button_text_a', 'Read More')); ?></div>
                         </div>
                     </div>
 
@@ -487,7 +487,7 @@
                             </div>
 
                             <!----- btn ----->
-                            <div class="yellow-bg-btn black-btn read-more">Read More</div>
+                            <div class="yellow-bg-btn black-btn read-more"><?php echo esc_html(get_theme_mod('blog_button_text_b', 'Read More')); ?></div>
                         </div>
                     </div>
 
