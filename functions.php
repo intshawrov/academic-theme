@@ -80,15 +80,15 @@ function lessonlms_customaiz_register($wp_customize){
         'type' => 'textarea',
     ) );
 
-       $wp_customize->add_setting('blog_section_description', array(
-        'default' => 'Build new skills with new trendy courses and shine for the next future career.',
-    ));
-    $wp_customize->add_control('blog_section_description_control', array(
-        'label' => __('Blog Section Description', 'lessonlms'),
-        'section' => 'blog_settings',
-        'settings' => 'blog_section_description',
-        'type' => 'textarea',
-    ) );
+    //    $wp_customize->add_setting('blog_section_description', array(
+    //     'default' => 'Build new skills with new trendy courses and shine for the next future career.',
+    // ));
+    // $wp_customize->add_control('blog_section_description_control', array(
+    //     'label' => __('Blog Section Description', 'lessonlms'),
+    //     'section' => 'blog_settings',
+    //     'settings' => 'blog_section_description',
+    //     'type' => 'textarea',
+    // ) );
 
     // Blog section H Title
     $wp_customize->add_setting('blog_section_title', array(
@@ -283,6 +283,15 @@ function lessonlms_theme_widgets(){
         'labels' => array(
             'name' => __('Lessons'),
             'singular_name' => __('Lesson')
+        ),
+        'public' => true,
+        'has_archive' => true
+    ));
+
+    register_post_type('course', array(
+        'labels' => array(
+            'name' => __('Courses'),
+            'singular_name' => __('Course')
         ),
         'public' => true,
         'has_archive' => true
