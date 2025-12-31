@@ -445,7 +445,7 @@
                             <!----- blog-details ----->
                             <div class="date">
                                 <div class="yellow-cercel"></div>
-                                <span>21 November 2021</span>
+                                <span><?php echo esc_html(get_theme_mod('blog_date', '')); ?></span>
                             </div>
 
                             <hr>

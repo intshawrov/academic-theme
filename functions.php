@@ -206,10 +206,6 @@ function lessonlms_customaiz_register($wp_customize){
     ) );
 
 
-
-
-    
-
     // Footer Section Start Here
     $wp_customize->add_section('footer_settings', array(
         'title' => __('Footer Settings', 'lessonlms'),
