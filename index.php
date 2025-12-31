@@ -481,10 +481,11 @@
                             </div>
 
                             <hr>
-
+                                <?php if(get_theme_mod('blog_section_title_b' , '')) : ?>
                             <div class="blog-title">
                                 <span><?php echo esc_html(get_theme_mod('blog_section_title_b', '')); ?></span>
                             </div>
+                            <?php endif; ?>
 
                             <!----- btn ----->
                             <div class="yellow-bg-btn black-btn read-more"><?php echo esc_html(get_theme_mod('blog_button_text_b', 'Read More')); ?></div>
