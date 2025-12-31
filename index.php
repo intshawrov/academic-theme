@@ -443,10 +443,13 @@
 
                         <div class="single-blog-details">
                             <!----- blog-details ----->
+
+                            <?php if(get_theme_mod('blog_date_a' , '')) : ?>
                             <div class="date">
                                 <div class="yellow-cercel"></div>
                                 <span><?php echo esc_html(get_theme_mod('blog_date_a', '')); ?></span>
                             </div>
+                            <?php endif; ?>
 
                             <hr>
 
