@@ -483,7 +483,7 @@
                             <hr>
 
                             <div class="blog-title">
-                                <span>How to become a pro web designer in 2022 and get remot job?</span>
+                                <span><?php echo esc_html(get_theme_mod('blog_section_title_b', '')); ?></span>
                             </div>
 
                             <!----- btn ----->
@@ -512,9 +512,11 @@
 
                             <hr>
 
+                            <?php if(get_theme_mod('blog_section_title_c' , '')) : ?>
                             <div class="blog-title">
-                                <span>How to become a pro web designer in 2022 and get remot job?</span>
+                                <span><?php echo esc_html(get_theme_mod('blog_section_title_c', '')); ?></span>
                             </div>
+                            <?php endif; ?>
 
                             <!----- btn ----->
                             <div class="yellow-bg-btn black-btn read-more"><?php echo esc_html(get_theme_mod('blog_button_text_c', 'Read More')); ?></div>
