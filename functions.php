@@ -332,24 +332,6 @@ function lessonlms_theme_widgets(){
         'after_title'   => '</h2>',
     ) );
 
-    register_post_type('lesson', array(
-        'labels' => array(
-            'name' => __('Lessons'),
-            'singular_name' => __('Lesson')
-        ),
-        'public' => true,
-        'has_archive' => true
-    ));
-
-    register_post_type('course', array(
-        'labels' => array(
-            'name' => __('Courses'),
-            'singular_name' => __('Course')
-        ),
-        'public' => true,
-        'has_archive' => true
-    ));
-
 
 }
 
