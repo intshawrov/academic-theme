@@ -215,6 +215,16 @@ function lessonlms_customaiz_register($wp_customize){
         'type' => 'text',
     ) );
 
+    $wp_customize->add_setting('blog_date_c', array(
+        'default' => 'December 30, 2025',
+    ));
+    $wp_customize->add_control('blog_date_c_control', array(
+        'label' => __('Blog Date C', 'lessonlms'),
+        'section' => 'blog_settings',
+        'settings' => 'blog_date_c',
+        'type' => 'text',
+    ) );
+
 
     // Footer Section Start Here
     $wp_customize->add_section('footer_settings', array(
