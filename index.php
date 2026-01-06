@@ -536,8 +536,9 @@
                         <div class="single-blog-details">
                             <!----- blog-details ----->
                             <div class="date">
+                                <?php if(get_theme_mod('blog_date_d' , '')) : ?>
                                 <div class="yellow-cercel"></div>
-                                <span>21 November 2021</span>
+                                <span><?php echo esc_html(get_theme_mod('blog_date_d', '')); ?></span>
                             </div>
 
                             <hr>
