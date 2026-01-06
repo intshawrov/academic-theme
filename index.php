@@ -535,11 +535,14 @@
 
                         <div class="single-blog-details">
                             <!----- blog-details ----->
+
+                            <?php if(get_theme_mod('blog_date_d' , '')) : ?>
                             <div class="date">
-                                <?php if(get_theme_mod('blog_date_d' , '')) : ?>
+                                
                                 <div class="yellow-cercel"></div>
                                 <span><?php echo esc_html(get_theme_mod('blog_date_d', '')); ?></span>
                             </div>
+                            <?php endif; ?>
 
                             <hr>
 
