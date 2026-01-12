@@ -41,24 +41,7 @@
                         </div>
 
 
-                        <!-- Comments Section -->
-                        <div class="comments-section">
-                            <h2 class="section-title">Comments (3)</h2>
-
-                            <!-- Comment 1 -->
-                            <div class="comment">
-                                <div class="comment-avatar">
-                                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/comment-avatar-1.png" alt="Sarah Johnson">
-                                </div>
-                                <div class="comment-content">
-                                    <div class="comment-meta">
-                                        <h4>Sarah Johnson</h4>
-                                        <span class="comment-date">2 days ago</span>
-                                    </div>
-                                    <p>This is a great post! I really enjoyed reading it.</p>
-                                </div>
-                            </div>
-                        </div>
+                        
 
                         <!-- Comment Form -->
                         <div class="comment-form">
