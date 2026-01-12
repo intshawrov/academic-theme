@@ -40,23 +40,6 @@
 
                         </div>
 
-                        <!-- Author  Box -->
-                        <div class="author-box">
-                            <div class="author-avatar">
-                                <?php echo get_avatar(get_the_author_meta('ID'), 40) ?>
-                                
-                            </div>
-                            <div class="author-info">
-                                <h3>About Abdullah Al Masoud</h3>
-                                <p>Masoud is a professional web designer with over 10 years of experience. He has worked with major companies and now runs his own design agency.</p>
-                                <div class="author-social">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                        </div>
 
                         <!-- Comments Section -->
                         <div class="comments-section">
